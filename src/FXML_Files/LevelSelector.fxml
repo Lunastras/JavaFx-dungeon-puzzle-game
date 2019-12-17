@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LevelSelectorController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="377.0" fitWidth="600.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../UI_Resources/MainMenuBackground.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_level1" layoutX="17.0" layoutY="119.0" mnemonicParsing="false" text="Level 1" />
+            <Button fx:id="button_level2" layoutX="212.0" layoutY="119.0" mnemonicParsing="false" text="Level 2" />
+            <Button fx:id="button_level3" layoutX="403.0" layoutY="119.0" mnemonicParsing="false" text="Level 3" />
+            <Button fx:id="button_level4" layoutX="107.0" layoutY="216.0" mnemonicParsing="false" text="Level 4" />
+            <Button fx:id="button_level5" layoutX="313.0" layoutY="216.0" mnemonicParsing="false" text="Level 5" />
+            <Label layoutX="233.0" layoutY="35.0" text="Level Selector:" textFill="WHITE" />
+            <Button fx:id="button_level_back" layoutX="212.0" layoutY="297.0" mnemonicParsing="false" text="Back" />
+         </children>
+         <stylesheets>
+            <URL value="@../CSS_Files/Leaderboard.css" />
+            <URL value="@../CSS_Files/MainMenu.css" />
+         </stylesheets>
+      </AnchorPane>
+   </center>
+</BorderPane>

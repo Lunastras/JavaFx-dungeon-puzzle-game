@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.net.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../CSS_Files/MainMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuController">
+   <top>
+      <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="340.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="340.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../UI_Resources/MainMenuBackground.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="button_new_game" layoutX="90.0" layoutY="60.0" mnemonicParsing="false" text="New Game">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_continue_game" layoutX="90.0" layoutY="135.0" mnemonicParsing="false" text="Continue">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_new_profile" layoutX="340.0" layoutY="60.0" mnemonicParsing="false" text="New Profile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_load_profile" layoutX="340.0" layoutY="135.0" mnemonicParsing="false" text="Load Profile">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_leaderboard" layoutX="215.0" layoutY="195.0" mnemonicParsing="false" text="Leaderboard">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button_exit_game" layoutX="215.0" layoutY="260.0" mnemonicParsing="false" text="Exit">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="game_name_label" layoutX="75.0" layoutY="15.0" text="Tunnels of the Hopeless Raven" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="current_profile_header" layoutX="12.0" layoutY="315.0" text="Current Profile:" textFill="WHITE" />
+            <Label fx:id="current_profile_text" layoutX="170.0" layoutY="315.0" text="None Selected" textFill="#f2f2f2" />
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <StackPane prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle fill="#2b1c2d" height="70.0" smooth="false" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+            <Text fx:id="quote_of_the_day_text" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Quote:" textAlignment="JUSTIFY" textOrigin="TOP" wrappingWidth="575.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </StackPane>
+   </bottom>
+</BorderPane>

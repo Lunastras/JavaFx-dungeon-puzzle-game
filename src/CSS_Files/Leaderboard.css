@@ -1,0 +1,73 @@
+#leaderboard_button_back {
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: #2B1C2D;
+    -fx-font-family: 'Fleftex';
+    -fx-font-size: 12pt;
+    -fx-text-fill: #ffffff;
+    -fx-pref-width: 150;
+    -fx-pref-height: 50;
+}
+
+#leaderboard_button_back:hover {
+    -fx-background-color: #993758;
+}
+
+#leaderboard_button_back:pressed {
+    -fx-background-color: #631D3A;
+}
+
+.label {
+    -fx-font-family: 'Fleftex';
+    -fx-font-size: 16pt;
+}
+
+.list-cell:even {
+    -fx-background-color: #631D3A;
+    -fx-font-family: 'Fleftex';
+    -fx-text-fill: #ffffff;
+}
+
+.list-cell:odd {
+    -fx-background-color: #993758;
+    -fx-font-family: 'Fleftex';
+    -fx-text-fill: #ffffff;
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.list-view .increment-button ,.list-view .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color:derive(#631D3A,80%);
+}
+
+.list-view .scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color:derive(#631D3A,80%);
+	 -fx-background-radius: 0em;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(#2B1C2D,90%);
+	-fx-background-insets: 0, 0, 0;
+	-fx-background-radius: 0em;
+}
+
+.list-view .scroll-bar .thumb:hover {
+    -fx-background-color: derive(#2B1C2D,50%);
+}
+
+.list-view .scroll-bar:horizontal .increment-arrow,
+.list-view .scroll-bar:horizontal .decrement-arrow,
+.list-view .scroll-bar:horizontal .increment-button,
+.list-view .scroll-bar:horizontal .decrement-button {
+    -fx-padding:0;
+}

@@ -1,0 +1,16 @@
+12
+8 5
+# # # # # 
+# # G # # 
+# # K # # 
+# # K # #
+# _ _ _ # 
+# _ _ _ # 
+# _ _ _ # 
+# # # # #
+Player 6 2
+KDoor 3 2 Red
+KDoor 2 2 Red
+Key 4 1 Red
+Key 4 2 Green
+Key 4 3 Blue
